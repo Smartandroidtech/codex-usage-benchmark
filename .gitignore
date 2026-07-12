@@ -3,7 +3,7 @@
 !.openai/
 !.openai/hosting.json
 !package.json
-!pages/
-!pages/**
+!hosting/
+!hosting/**
 !site/
 !site/**

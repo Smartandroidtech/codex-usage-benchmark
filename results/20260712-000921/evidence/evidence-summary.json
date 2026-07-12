@@ -1,0 +1,230 @@
+{
+  "experiment": "20260712-000921",
+  "runs": 12,
+  "models": {
+    "gpt-5.5": {
+      "runs": 6,
+      "correct": 6,
+      "input_tokens": 165883,
+      "cached_input_tokens": 113152,
+      "uncached_input_tokens": 52731,
+      "output_tokens": 3644,
+      "reasoning_output_tokens": 2898,
+      "duration_seconds": 103.477,
+      "command_executions": 6
+    },
+    "gpt-5.6-sol": {
+      "runs": 6,
+      "correct": 6,
+      "input_tokens": 165247,
+      "cached_input_tokens": 78336,
+      "uncached_input_tokens": 86911,
+      "output_tokens": 1937,
+      "reasoning_output_tokens": 1041,
+      "duration_seconds": 71.246,
+      "command_executions": 6
+    }
+  },
+  "quota_valid_runs": 9,
+  "ambiguous_rate_runs": 3,
+  "sanitized_evidence_files": [
+    {
+      "file": "manifest.sanitized.json",
+      "sha256": "227f9b80a30de7fbef6cc5cecf6a38257fcbe789385ecc007d65f392116a2801"
+    },
+    {
+      "file": "01-aggregate-gpt-5.5.events.sanitized.jsonl",
+      "sha256": "c79feebc299bf5e214ad828dc226178c1de689cb6275a54156c93dee943ec061"
+    },
+    {
+      "file": "01-aggregate-gpt-5.5.rate-limit-snapshots.sanitized.json",
+      "sha256": "b24d83f2ea02d30f7d8dcf763f38400dddeffc36281d3b55508ed1c5fb0f92cb"
+    },
+    {
+      "file": "01-aggregate-gpt-5.5.selected-rate-limit.sanitized.json",
+      "sha256": "cc854ac88a4840a0854b021c5fce43dec1dc300bc60a7d80b9cdf41069b50ea2"
+    },
+    {
+      "file": "01-aggregate-gpt-5.5.resolved-session.sanitized.json",
+      "sha256": "679bb3785b3ff6f75dcbe2d407377ce360a48bc4a1d6fa6884d65ab2f05b2249"
+    },
+    {
+      "file": "02-aggregate-gpt-5.5.events.sanitized.jsonl",
+      "sha256": "44653f296e4185fa4791146dd30c3b6df9d3c5d002f1c1c9e9a6670d4707ddb4"
+    },
+    {
+      "file": "02-aggregate-gpt-5.5.rate-limit-snapshots.sanitized.json",
+      "sha256": "686769244d34c30e35f9aa56fa1370ea4089b6828144250914b132819198b287"
+    },
+    {
+      "file": "02-aggregate-gpt-5.5.selected-rate-limit.sanitized.json",
+      "sha256": "9b6e19edd0a8033ff11adbed48a370334bcd68cebbd72b480a133497a12853ae"
+    },
+    {
+      "file": "02-aggregate-gpt-5.5.resolved-session.sanitized.json",
+      "sha256": "a5d57442b0616f6863ac8058e5b80401090d7c9044f22880a16be6a19218f93b"
+    },
+    {
+      "file": "03-aggregate-gpt-5.6-sol.events.sanitized.jsonl",
+      "sha256": "91d251cd5ad3b0c3b01f1ab445e4ea7ab95fb888e5ff116f2c4e3c64750d9b93"
+    },
+    {
+      "file": "03-aggregate-gpt-5.6-sol.rate-limit-snapshots.sanitized.json",
+      "sha256": "d4de2e01ea0004ac9f6378c4b4b1cc049dd52986c87d06e92507dbc701f2581a"
+    },
+    {
+      "file": "03-aggregate-gpt-5.6-sol.selected-rate-limit.sanitized.json",
+      "sha256": "b21d793e14b2d03c63d81b223df7c2c9fc40aa68123301728c696b2fedcc3b4b"
+    },
+    {
+      "file": "03-aggregate-gpt-5.6-sol.resolved-session.sanitized.json",
+      "sha256": "c6aebffc1dd0a4b6ac357e0636e310fec5b2527eef7e4d04f03a86f870218ab5"
+    },
+    {
+      "file": "04-aggregate-gpt-5.6-sol.events.sanitized.jsonl",
+      "sha256": "eacbd667f83e4e1bccbda118c5405795703cc41b5a1a139f46949d5214fca0e8"
+    },
+    {
+      "file": "04-aggregate-gpt-5.6-sol.rate-limit-snapshots.sanitized.json",
+      "sha256": "ab6749999afd5046e2b28550ab75baca809b138612848f587b97487ab4082621"
+    },
+    {
+      "file": "04-aggregate-gpt-5.6-sol.selected-rate-limit.sanitized.json",
+      "sha256": "359f8a0ef693361d5529fa2757216dd6939ffc5ef6094df75ef4d12c6660c604"
+    },
+    {
+      "file": "04-aggregate-gpt-5.6-sol.resolved-session.sanitized.json",
+      "sha256": "bc5343a017b3777a774d478165d3a33b097fe872ff9a16d9e72171f32d8342c7"
+    },
+    {
+      "file": "05-dependencies-gpt-5.6-sol.events.sanitized.jsonl",
+      "sha256": "c33e1278035a1b842f61cedcf8554a3fce1188733ef8ef3b12d45f5b8af21c91"
+    },
+    {
+      "file": "05-dependencies-gpt-5.6-sol.rate-limit-snapshots.sanitized.json",
+      "sha256": "67fb44884d9e38e9cf0606e8b04e429371316559a8c6d3c6599819ca64a04c5e"
+    },
+    {
+      "file": "05-dependencies-gpt-5.6-sol.selected-rate-limit.sanitized.json",
+      "sha256": "bf8b1f1ab3a2d6f50c331f13824f851577b173aa950a4aedcce0a01c904100f6"
+    },
+    {
+      "file": "05-dependencies-gpt-5.6-sol.resolved-session.sanitized.json",
+      "sha256": "501a2b0f7ef3d5d9cc06d3ee1ef31eb5558588a977acd67b1e8dd7e9c6d748f4"
+    },
+    {
+      "file": "06-dependencies-gpt-5.6-sol.events.sanitized.jsonl",
+      "sha256": "f2bb9e041ef94aedbcf630f6a7a94ff8e776e74b65d4216319a5138db3e6a932"
+    },
+    {
+      "file": "06-dependencies-gpt-5.6-sol.rate-limit-snapshots.sanitized.json",
+      "sha256": "22fbacf6c4df9c1566b1854489052b21b82a13e08f406891ff568a71d2e722b1"
+    },
+    {
+      "file": "06-dependencies-gpt-5.6-sol.selected-rate-limit.sanitized.json",
+      "sha256": "5848496f86960fc99159ba24bbaa6b4ce4d780147aa49e8db71dad1f609eafe9"
+    },
+    {
+      "file": "06-dependencies-gpt-5.6-sol.resolved-session.sanitized.json",
+      "sha256": "32716ddc1b0df5f0c28411156d7ade9c0308c14ec80047a12a8f1bca19b3caf6"
+    },
+    {
+      "file": "07-dependencies-gpt-5.5.events.sanitized.jsonl",
+      "sha256": "0d4cfb552ea435b7b71c6e5adff43940712ddcd5d21caf728faea381462eef7c"
+    },
+    {
+      "file": "07-dependencies-gpt-5.5.rate-limit-snapshots.sanitized.json",
+      "sha256": "8774164b633de950a39827fed9e474a6dfd3580c2ec3dad50248e1a56c3e6302"
+    },
+    {
+      "file": "07-dependencies-gpt-5.5.selected-rate-limit.sanitized.json",
+      "sha256": "a299255dd5ed7f3bbb74c5b1eeff98f3fd0050793e9ee85b465edb4afb0b1c07"
+    },
+    {
+      "file": "07-dependencies-gpt-5.5.resolved-session.sanitized.json",
+      "sha256": "1473aed4f24c3af118cf623736d5d1fac7afab30850679b79e06466652208460"
+    },
+    {
+      "file": "08-dependencies-gpt-5.5.events.sanitized.jsonl",
+      "sha256": "274a9a5a5c316c92882270d889e880739c2d6cb2fb20faf90375c7995ac4fe10"
+    },
+    {
+      "file": "08-dependencies-gpt-5.5.rate-limit-snapshots.sanitized.json",
+      "sha256": "700a80c09403e9906991704bbd88fb28067a990110c40752e56c906f1dfe766b"
+    },
+    {
+      "file": "08-dependencies-gpt-5.5.selected-rate-limit.sanitized.json",
+      "sha256": "c889d4c2feccc83c55656e5607956c48c44c528c05e980178f057ea7b11c455d"
+    },
+    {
+      "file": "08-dependencies-gpt-5.5.resolved-session.sanitized.json",
+      "sha256": "2b44c3964e02fc135ae55b069c4f3d08ec7091c106e6c5139030a42a81ad21a4"
+    },
+    {
+      "file": "09-schedule-gpt-5.5.events.sanitized.jsonl",
+      "sha256": "70ba571e6bb6617a4057661d63f0c9ad950d045418bfcce4d22a3bd7749fa817"
+    },
+    {
+      "file": "09-schedule-gpt-5.5.rate-limit-snapshots.sanitized.json",
+      "sha256": "8a1e281011bf2f080e43c4608b4df2677cb48b678a37c4f0859f6db64c4aeb24"
+    },
+    {
+      "file": "09-schedule-gpt-5.5.selected-rate-limit.sanitized.json",
+      "sha256": "562e2b2010a18f64afb6ca9159ff991fb2e6f9fbda08573e1200db8e2c24ae12"
+    },
+    {
+      "file": "09-schedule-gpt-5.5.resolved-session.sanitized.json",
+      "sha256": "70afcda7b55b9a0fd6b6259292a4b82128299ee8958af1ddeb08e98ae55899b9"
+    },
+    {
+      "file": "10-schedule-gpt-5.5.events.sanitized.jsonl",
+      "sha256": "cb916d115713a24bdddf0780e1b48adcbed134e3b3161270d59a934057d49f90"
+    },
+    {
+      "file": "10-schedule-gpt-5.5.rate-limit-snapshots.sanitized.json",
+      "sha256": "09f7ead68e0cb2c43317c5c7fad12d32b0d8f7902f053d0660c11df89d74d76d"
+    },
+    {
+      "file": "10-schedule-gpt-5.5.selected-rate-limit.sanitized.json",
+      "sha256": "6c33c54fdf9b9177f5171d120391891a124584f65eba9998cbc4d55801659d6c"
+    },
+    {
+      "file": "10-schedule-gpt-5.5.resolved-session.sanitized.json",
+      "sha256": "6eb8819e54eb9ce5f763cb345b21167182c09f09f01a7b78afc9f55a4fe7b253"
+    },
+    {
+      "file": "11-schedule-gpt-5.6-sol.events.sanitized.jsonl",
+      "sha256": "33e8d10a8ee69a3c71b8ea52e1251ef2556a94c6479c88b8e98c5f26c7d7c429"
+    },
+    {
+      "file": "11-schedule-gpt-5.6-sol.rate-limit-snapshots.sanitized.json",
+      "sha256": "1930002f78252d32e142413a6e400fdf0c5cbef4af1de0f3dbb1a0e39687175b"
+    },
+    {
+      "file": "11-schedule-gpt-5.6-sol.selected-rate-limit.sanitized.json",
+      "sha256": "41407f381783c84dded84a8330be7f331233e8d881b1ff0ee2a0ea2106be0323"
+    },
+    {
+      "file": "11-schedule-gpt-5.6-sol.resolved-session.sanitized.json",
+      "sha256": "2e823e1037fe4f457472ad31d3696598a7e8cb8ee17a7900347b3b682e9ece29"
+    },
+    {
+      "file": "12-schedule-gpt-5.6-sol.events.sanitized.jsonl",
+      "sha256": "76591e9383dd49fa20db972b4476c4f86c584c93b0f5625f01136da77bc457cb"
+    },
+    {
+      "file": "12-schedule-gpt-5.6-sol.rate-limit-snapshots.sanitized.json",
+      "sha256": "fd15244765906739ef9da4accd1bfc702dd8bc4a98446b68a8b5628e3c5772ba"
+    },
+    {
+      "file": "12-schedule-gpt-5.6-sol.selected-rate-limit.sanitized.json",
+      "sha256": "d3b5804d84257f3729b9b9e4799e94c87321d41991c232d89db5383613893398"
+    },
+    {
+      "file": "12-schedule-gpt-5.6-sol.resolved-session.sanitized.json",
+      "sha256": "099d7629b51bb9ee8e9c510ee6258ed35f12e843a75938e21d504d05a07f379d"
+    }
+  ],
+  "five_hour_endpoint_change": 7.0,
+  "weekly_endpoint_change": 1.0
+}

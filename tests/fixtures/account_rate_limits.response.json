@@ -1,0 +1,38 @@
+{
+  "id": 2,
+  "result": {
+    "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "primary": {"usedPercent": 80, "windowDurationMins": 300, "resetsAt": 1783825346},
+      "secondary": {"usedPercent": 30, "windowDurationMins": 10080, "resetsAt": 1784393379},
+      "credits": {"hasCredits": false, "unlimited": false, "balance": "0"},
+      "individualLimit": null,
+      "planType": "plus",
+      "rateLimitReachedType": null
+    },
+    "rateLimitsByLimitId": {
+      "codex": {
+        "limitId": "codex",
+        "limitName": null,
+        "primary": {"usedPercent": 80, "windowDurationMins": 300, "resetsAt": 1783825346},
+        "secondary": {"usedPercent": 30, "windowDurationMins": 10080, "resetsAt": 1784393379},
+        "credits": {"hasCredits": false, "unlimited": false, "balance": "0"},
+        "individualLimit": null,
+        "planType": "plus",
+        "rateLimitReachedType": null
+      },
+      "alternate_pool": {
+        "limitId": "alternate_pool",
+        "limitName": "decoy",
+        "primary": {"usedPercent": 5, "windowDurationMins": 60, "resetsAt": 1999999999},
+        "secondary": null,
+        "credits": null,
+        "individualLimit": null,
+        "planType": "plus",
+        "rateLimitReachedType": null
+      }
+    },
+    "rateLimitResetCredits": {"availableCount": 3, "credits": null}
+  }
+}

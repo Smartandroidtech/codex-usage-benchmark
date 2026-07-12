@@ -1,0 +1,20 @@
+{
+  "models": ["gpt-5.5", "gpt-5.6-sol"],
+  "reasoning_effort": "medium",
+  "repetitions": 1,
+  "pause_seconds": 8,
+  "max_used_percent": 90,
+  "schedule": "paired_batches",
+  "max_weekly_used_percent": 50,
+  "guard_band_percent": 3,
+  "idle_check_seconds": 20,
+  "expected_command_executions": 1,
+  "max_agent_messages": 2,
+  "expected_model_calls": 2,
+  "input_token_warning_min": 20000,
+  "input_token_warning_max": 45000,
+  "fresh_read_enabled": true,
+  "post_run_settle_seconds": 5,
+  "fresh_read_timeout_seconds": 25,
+  "fresh_read_limit_id": "codex"
+}

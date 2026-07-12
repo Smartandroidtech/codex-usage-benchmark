@@ -1,0 +1,1 @@
+Read only input.txt using one shell command; do not list or search other files. A target is impacted when it is changed or depends transitively on a changed target. Return only JSON matching the supplied schema. task_id must be "dependencies-v1". answer must contain every impacted target exactly once in alphabetical order.

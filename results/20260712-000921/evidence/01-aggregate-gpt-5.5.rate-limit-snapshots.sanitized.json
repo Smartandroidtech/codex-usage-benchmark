@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-07-11T22:09:27.311Z",
+    "rate_limits": {
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 15.0,
+        "window_minutes": 300,
+        "resets_at": 1783817163
+      },
+      "secondary": {
+        "used_percent": 2.0,
+        "window_minutes": 10080,
+        "resets_at": 1784403963
+      },
+      "credits": null,
+      "individual_limit": null,
+      "plan_type": "plus",
+      "rate_limit_reached_type": null
+    }
+  },
+  {
+    "timestamp": "2026-07-11T22:09:33.800Z",
+    "rate_limits": {
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 18.0,
+        "window_minutes": 300,
+        "resets_at": 1783825346
+      },
+      "secondary": {
+        "used_percent": 20.0,
+        "window_minutes": 10080,
+        "resets_at": 1784393379
+      },
+      "credits": null,
+      "individual_limit": null,
+      "plan_type": "plus",
+      "rate_limit_reached_type": null
+    }
+  }
+]

@@ -1,0 +1,22 @@
+Targets and direct dependencies:
+A: D E
+B: E F
+C: F G
+D: H I
+E: I J
+F: J K
+G: K L
+H: M
+I: M N
+J: N O
+K: O P
+L: P
+M: Q
+N: Q R
+O: R S
+P: S
+Q:
+R:
+S:
+
+Changed targets: I, O.

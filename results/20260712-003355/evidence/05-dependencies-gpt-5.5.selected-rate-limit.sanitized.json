@@ -1,0 +1,24 @@
+{
+  "selected": {
+    "timestamp": "2026-07-11T22:35:50.248Z",
+    "rate_limits": {
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 46.0,
+        "window_minutes": 300,
+        "resets_at": 1783825346
+      },
+      "secondary": {
+        "used_percent": 25.0,
+        "window_minutes": 10080,
+        "resets_at": 1784393379
+      },
+      "credits": null,
+      "individual_limit": null,
+      "plan_type": "plus",
+      "rate_limit_reached_type": null
+    }
+  },
+  "reason": "last snapshot matching locked primary and weekly reset"
+}

@@ -1,0 +1,9 @@
+{
+  "session_id": "019f533d-d122-7762-ac5a-0e8baa6123ca",
+  "cli_version": "0.144.0",
+  "model_provider": "openai",
+  "model": "gpt-5.6-sol",
+  "effort": "medium",
+  "context_window_id": null,
+  "model_context_window": 353400
+}

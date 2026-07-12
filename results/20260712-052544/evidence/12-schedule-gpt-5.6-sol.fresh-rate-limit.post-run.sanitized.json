@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "snapshot": {
+    "primary": {
+      "used_percent": 31,
+      "resets_at": 1783843893,
+      "window_duration_mins": 300
+    },
+    "secondary": {
+      "used_percent": 37,
+      "resets_at": 1784393379,
+      "window_duration_mins": 10080
+    },
+    "limit_id": "codex",
+    "plan_type": "plus",
+    "rate_limit_reached_type": null,
+    "reset_credit_available_count": 3,
+    "bucket_ids": [
+      "codex"
+    ]
+  },
+  "error": null,
+  "settle_seconds": 5,
+  "limit_id": "codex",
+  "requested_at": "2026-07-12T03:30:51.387502+00:00",
+  "read_at": "2026-07-12T03:30:52.131029+00:00",
+  "raw_result": {
+    "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "primary": {
+        "usedPercent": 31,
+        "windowDurationMins": 300,
+        "resetsAt": 1783843893
+      },
+      "secondary": {
+        "usedPercent": 37,
+        "windowDurationMins": 10080,
+        "resetsAt": 1784393379
+      },
+      "credits": {
+        "hasCredits": false,
+        "unlimited": false,
+        "balance": "0"
+      },
+      "individualLimit": null,
+      "planType": "plus",
+      "rateLimitReachedType": null
+    },
+    "rateLimitsByLimitId": {
+      "codex": {
+        "limitId": "codex",
+        "limitName": null,
+        "primary": {
+          "usedPercent": 31,
+          "windowDurationMins": 300,
+          "resetsAt": 1783843893
+        },
+        "secondary": {
+          "usedPercent": 37,
+          "windowDurationMins": 10080,
+          "resetsAt": 1784393379
+        },
+        "credits": {
+          "hasCredits": false,
+          "unlimited": false,
+          "balance": "0"
+        },
+        "individualLimit": null,
+        "planType": "plus",
+        "rateLimitReachedType": null
+      }
+    },
+    "rateLimitResetCredits": {
+      "availableCount": 3,
+      "credits": [
+        {
+          "id": "RateLimitResetCredit_1a2e179c02008191b9f4613d17afbf12",
+          "resetType": "codexRateLimits",
+          "status": "available",
+          "grantedAt": 1781741622,
+          "expiresAt": 1784333622,
+          "title": "Full reset (Weekly + 5 hr)",
+          "description": "Thanks for using Codex! You've been granted one free rate limit reset."
+        },
+        {
+          "id": "RateLimitResetCredit_34ff664e54cc8191acd8eb67b20a9d51",
+          "resetType": "codexRateLimits",
+          "status": "available",
+          "grantedAt": 1782517447,
+          "expiresAt": 1785109447,
+          "title": "Full reset (Weekly + 5 hr)",
+          "description": "Thanks for using Codex! You've been granted one free rate limit reset."
+        },
+        {
+          "id": "RateLimitResetCredit_0264e31a55688191b8d44020403392e9",
+          "resetType": "codexRateLimits",
+          "status": "available",
+          "grantedAt": 1782935902,
+          "expiresAt": 1785527902,
+          "title": "Full reset (Weekly + 5 hr)",
+          "description": "Thanks for using Codex! You've been granted one free rate limit reset."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "session_id": "019f545f-7be0-7412-a174-d48a85db9f13",
+  "cli_version": "0.144.0",
+  "model_provider": "openai",
+  "model": "gpt-5.5",
+  "effort": "medium",
+  "context_window_id": null,
+  "model_context_window": 258400
+}

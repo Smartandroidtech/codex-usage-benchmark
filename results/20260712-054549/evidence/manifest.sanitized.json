@@ -1,0 +1,170 @@
+{
+  "created_at": "2026-07-12T03:45:49.778328+00:00",
+  "phase": 1,
+  "config": {
+    "models": [
+      "gpt-5.5",
+      "gpt-5.6-sol"
+    ],
+    "reasoning_effort": "medium",
+    "repetitions": 1,
+    "pause_seconds": 8,
+    "max_used_percent": 90,
+    "schedule": "paired_batches",
+    "max_weekly_used_percent": 50,
+    "guard_band_percent": 3,
+    "idle_check_seconds": 20,
+    "expected_command_executions": 1,
+    "max_agent_messages": 2,
+    "expected_model_calls": 2,
+    "input_token_warning_min": 20000,
+    "input_token_warning_max": 45000,
+    "fresh_read_enabled": true,
+    "post_run_settle_seconds": 5,
+    "fresh_read_timeout_seconds": 25,
+    "fresh_read_limit_id": "codex"
+  },
+  "plan": [
+    {
+      "run": 1,
+      "repetition": 1,
+      "task": "aggregate",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "run": 2,
+      "repetition": 1,
+      "task": "aggregate",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "run": 3,
+      "repetition": 1,
+      "task": "aggregate",
+      "model": "gpt-5.5"
+    },
+    {
+      "run": 4,
+      "repetition": 1,
+      "task": "aggregate",
+      "model": "gpt-5.5"
+    },
+    {
+      "run": 5,
+      "repetition": 1,
+      "task": "dependencies",
+      "model": "gpt-5.5"
+    },
+    {
+      "run": 6,
+      "repetition": 1,
+      "task": "dependencies",
+      "model": "gpt-5.5"
+    },
+    {
+      "run": 7,
+      "repetition": 1,
+      "task": "dependencies",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "run": 8,
+      "repetition": 1,
+      "task": "dependencies",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "run": 9,
+      "repetition": 1,
+      "task": "schedule",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "run": 10,
+      "repetition": 1,
+      "task": "schedule",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "run": 11,
+      "repetition": 1,
+      "task": "schedule",
+      "model": "gpt-5.5"
+    },
+    {
+      "run": 12,
+      "repetition": 1,
+      "task": "schedule",
+      "model": "gpt-5.5"
+    }
+  ],
+  "baseline_start": {
+    "timestamp": "2026-07-12T03:45:49.204Z",
+    "rate_limits": {
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 38.0,
+        "window_minutes": 300,
+        "resets_at": 1783843892
+      },
+      "secondary": {
+        "used_percent": 38.0,
+        "window_minutes": 10080,
+        "resets_at": 1784393379
+      },
+      "credits": {
+        "has_credits": false,
+        "unlimited": false,
+        "balance": "0"
+      },
+      "individual_limit": null,
+      "plan_type": "plus",
+      "rate_limit_reached_type": null
+    },
+    "source": "<HOME>/.codex/sessions/2026/07/11/rollout-2026-07-11T21-21-13-019f52a0-6d2e-7fd0-b02b-1b062c4cbb55.jsonl"
+  },
+  "baseline_end": {
+    "timestamp": "2026-07-12T03:45:49.204Z",
+    "rate_limits": {
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 38.0,
+        "window_minutes": 300,
+        "resets_at": 1783843892
+      },
+      "secondary": {
+        "used_percent": 38.0,
+        "window_minutes": 10080,
+        "resets_at": 1784393379
+      },
+      "credits": {
+        "has_credits": false,
+        "unlimited": false,
+        "balance": "0"
+      },
+      "individual_limit": null,
+      "plan_type": "plus",
+      "rate_limit_reached_type": null
+    },
+    "source": "<HOME>/.codex/sessions/2026/07/11/rollout-2026-07-11T21-21-13-019f52a0-6d2e-7fd0-b02b-1b062c4cbb55.jsonl"
+  },
+  "idle_drift": false,
+  "idle_check_skipped": true,
+  "status": "complete",
+  "artifact_sha256": {
+    "config.json": "89709453e7aeae523d8b0cf2d2ef6e8e112f0d5ec94f23cc1463a2829d7b70df",
+    "schemas/result.schema.json": "dc6aaa2ad4f4eb8c2091f55f737f37eca3b73e08a91bc67ba5884907265ebeba",
+    "tasks/aggregate/prompt.txt": "8d1c1f395a3b36151857cc3f1a598d24fac341967dae374925600988ef6f8afa",
+    "tasks/aggregate/input.json": "b27ab4d504997cc80025d831fafe8904e2219ff7cdd72964c8dddb25fa1c9e46",
+    "tasks/aggregate/expected.json": "8dc8e8b8b2c490bf53b9b542594b9749cb7ad3427686d509432ffb22ee9ba236",
+    "tasks/dependencies/prompt.txt": "2ea025f207b2b0a0b31dad6cf241fe1f47c8e184aad66c56e3ada3ca48b3db1a",
+    "tasks/dependencies/input.txt": "87f05431bc6d4188ebe084607c8577b86a820b6618711c81d49dd0c1bc4a6db5",
+    "tasks/dependencies/expected.json": "d9117ba2b549163661427468f1e6b037c83b4d8f7f3aef20e82f3b9fc482ea58",
+    "tasks/schedule/prompt.txt": "186b4ee962cf098b4e90d068f6db541f2fec93d25c69e79b86be9a5f7cb9b22c",
+    "tasks/schedule/input.txt": "01781bb01a1370c43e30acfd1426d0f728f9766ff920add9e54b11845620ed8c",
+    "tasks/schedule/expected.json": "8d41c362195195c1709e1829dcf7dd43ba9417cff0cb6bc3ff15b64fc41331e7"
+  },
+  "completed_at": "2026-07-12T03:50:57.092109+00:00"
+}

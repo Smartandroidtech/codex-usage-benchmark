@@ -1,0 +1,385 @@
+{
+  "method": "per-experiment dominant-reset reconciliation",
+  "experiments": [
+    {
+      "result": "20260712-000921",
+      "phase": 0,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 2.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 2.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783825346,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 24.0
+    },
+    {
+      "result": "20260712-003355",
+      "phase": 1,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 1
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 3.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783825346,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 48.0
+    },
+    {
+      "result": "20260712-003821",
+      "phase": 0,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 2.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783825346,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 54.0
+    },
+    {
+      "result": "20260712-012414",
+      "phase": 1,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 2.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 3.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783825346,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 74.0
+    },
+    {
+      "result": "20260712-012812",
+      "phase": 0,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 3.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783825346,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 80.0
+    },
+    {
+      "result": "20260712-051137",
+      "phase": 1,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 3.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 2.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 2.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783843892,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 12.0
+    },
+    {
+      "result": "20260712-052544",
+      "phase": 0,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 3.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 4.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783843892,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 30.0
+    },
+    {
+      "result": "20260712-054549",
+      "phase": 1,
+      "batches": [
+        {
+          "task": "aggregate",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 4.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "aggregate",
+          "model": "gpt-5.5",
+          "delta_5h": 4.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.5",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "dependencies",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 0.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.6-sol",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        },
+        {
+          "task": "schedule",
+          "model": "gpt-5.5",
+          "delta_5h": 1.0,
+          "target_snapshots_seen": 2
+        }
+      ],
+      "reset_pair": {
+        "primary": 1783843892,
+        "secondary": 1784393379
+      },
+      "endpoint_used_percent": 48.0
+    }
+  ],
+  "model_totals": {
+    "gpt-5.5": 29.0,
+    "gpt-5.6-sol": 34.0
+  }
+}

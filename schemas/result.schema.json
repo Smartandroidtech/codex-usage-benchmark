@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_id", "answer"],
+  "properties": {
+    "task_id": {"type": "string"},
+    "answer": {"type": "array", "items": {"type": "string"}}
+  }
+}

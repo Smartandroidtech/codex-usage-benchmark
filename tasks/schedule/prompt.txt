@@ -1,0 +1,1 @@
+Read only input.txt using one shell command; do not list or search other files. Solve the interval scheduling problem exactly under its tie-breaking rule. Return only JSON matching the supplied schema. task_id must be "schedule-v1". answer must be the selected job IDs ordered by end time, then start time, then ID.

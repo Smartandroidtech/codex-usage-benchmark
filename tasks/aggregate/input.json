@@ -1,0 +1,14 @@
+[
+  {"region":"north","sku":"A","qty":7,"price_cents":1250},
+  {"region":"south","sku":"B","qty":3,"price_cents":2199},
+  {"region":"north","sku":"C","qty":11,"price_cents":499},
+  {"region":"west","sku":"A","qty":5,"price_cents":1250},
+  {"region":"south","sku":"C","qty":13,"price_cents":499},
+  {"region":"west","sku":"D","qty":2,"price_cents":8750},
+  {"region":"north","sku":"B","qty":4,"price_cents":2199},
+  {"region":"south","sku":"A","qty":9,"price_cents":1250},
+  {"region":"west","sku":"C","qty":6,"price_cents":499},
+  {"region":"north","sku":"D","qty":1,"price_cents":8750},
+  {"region":"south","sku":"D","qty":3,"price_cents":8750},
+  {"region":"west","sku":"B","qty":8,"price_cents":2199}
+]

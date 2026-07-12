@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p public && cp -R site/. public/ && next build",
-    "start": "next start"
+    "build": "vite build"
   },
-  "dependencies": {
-    "next": "^15.4.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+  "devDependencies": {
+    "vite": "^7.0.0"
   }
 }

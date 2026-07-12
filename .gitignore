@@ -3,8 +3,6 @@
 !.openai/
 !.openai/hosting.json
 !package.json
-!next.config.mjs
-!pages/
-!pages/_app.js
+!vite.config.js
 !site/
 !site/**

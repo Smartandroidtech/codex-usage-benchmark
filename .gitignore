@@ -3,6 +3,7 @@
 !.openai/
 !.openai/hosting.json
 !package.json
-!vite.config.js
+!pages/
+!pages/**
 !site/
 !site/**

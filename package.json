@@ -2,10 +2,17 @@
   "name": "codex-window-benchmark-site",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "vite build"
+    "build": "mkdir -p public && cp -R site/. public/ && vinext build && mkdir -p dist/.openai && cp .openai/hosting.json dist/.openai/hosting.json"
+  },
+  "dependencies": {
+    "vinext": "latest",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "vite": "^7.0.0"
+    "vite": "^8.0.0",
+    "@vitejs/plugin-react": "latest"
   }
 }

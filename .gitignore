@@ -1,0 +1,10 @@
+*
+!.gitignore
+!.openai/
+!.openai/hosting.json
+!package.json
+!next.config.mjs
+!pages/
+!pages/_app.js
+!site/
+!site/**

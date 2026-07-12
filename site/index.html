@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A repeatable comparison of GPT-5.5 medium and GPT-5.6 Sol medium on Codex five-hour window usage.">
+  <title>Codex Window Benchmark — Results</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="Codex Window Benchmark, home"><span>CODEX</span><i></i><small>WINDOW<br>BENCHMARK</small></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a class="active" href="#risultati">Results</a><a href="#findings">Findings</a><a href="methodology.html">Methodology</a>
+      <span class="future-link" tabindex="0" data-tip="The public repository will be linked here when available.">GitHub <em>soon</em></span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="risultati">
+      <div class="eyebrow"><span class="pulse"></span> Independent benchmark · 8 complete suites · July 12, 2026</div>
+      <div class="hero-grid">
+        <div>
+          <h1>More efficient<br>with tokens.<br><em>Not with quota.</em></h1>
+          <p class="lede">GPT-5.6 Sol produced fewer tokens and responded faster. Yet in our tests, it consumed more points from Codex's five-hour window.</p>
+          <a class="text-link" href="methodology.html">How the test was run <span>→</span></a>
+        </div>
+        <div class="quota-figure" aria-label="Total usage: GPT-5.5 29 points, GPT-5.6 Sol 34 points">
+          <div class="figure-head"><span>TOTAL USAGE</span><button class="info" data-tip="Sum of percentage points observed through the in-run counter for the primary 300-minute window.">?</button></div>
+          <div class="quota-pair">
+            <div><span>GPT-5.5</span><strong>29</strong><small>points</small></div>
+            <div class="accent"><span>GPT-5.6 Sol</span><strong>34</strong><small>points</small></div>
+          </div>
+          <div class="delta"><b>+5 points</b><b>+17.2%</b><span>for GPT-5.6 Sol</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence wrap" aria-labelledby="evidence-title">
+      <div class="section-title"><div><span>01 / THE EVIDENCE</span><h2 id="evidence-title">Less observable work,<br>more quota charged.</h2></div><p>The comparison aggregates 48 runs per model, all using <b>medium</b> reasoning effort and verified deterministic output.</p></div>
+      <div class="metric-lines">
+        <article class="metric-row">
+          <div><h3>5h quota</h3><p>Lower is better</p></div>
+          <div class="bar-chart quota-bars"><div><span>GPT-5.5</span><i style="--w:85.3%"></i><b>29 pt</b></div><div class="accent"><span>GPT-5.6 Sol</span><i style="--w:100%"></i><b>34 pt</b></div></div>
+          <strong class="outcome bad">+17.2%</strong>
+        </article>
+        <article class="metric-row">
+          <div><h3>Output tokens</h3><p>Observed total</p></div>
+          <div class="bar-chart"><div><span>GPT-5.5</span><i style="--w:100%"></i><b>27.762</b></div><div class="accent"><span>GPT-5.6 Sol</span><i style="--w:57.3%"></i><b>15.901</b></div></div>
+          <strong class="outcome good">−42.7%</strong>
+        </article>
+        <article class="metric-row">
+          <div><h3>Reasoning tokens</h3><p>Observed total</p></div>
+          <div class="bar-chart"><div><span>GPT-5.5</span><i style="--w:100%"></i><b>19.537</b></div><div class="accent"><span>GPT-5.6 Sol</span><i style="--w:43.6%"></i><b>8.525</b></div></div>
+          <strong class="outcome good">−56.4%</strong>
+        </article>
+        <article class="metric-row">
+          <div><h3>Duration</h3><p>Sum of all runs</p></div>
+          <div class="bar-chart"><div><span>GPT-5.5</span><i style="--w:100%"></i><b>744.6 s</b></div><div class="accent"><span>GPT-5.6 Sol</span><i style="--w:74.9%"></i><b>557.9 s</b></div></div>
+          <strong class="outcome good">−25.1%</strong>
+        </article>
+      </div>
+      <p class="reading-note"><span>How to read:</span> green indicates GPT-5.6 Sol. Its greater token and time efficiency does not translate into lower observed quota usage.</p>
+    </section>
+
+    <section class="order-section wrap" id="findings">
+      <div class="section-title"><div><span>02 / THE ORDER EFFECT</span><h2>Attribution changes<br>with who goes first.</h2></div><p>Model order was alternated across suites. The aggregate result remains unfavorable to GPT-5.6 Sol, but each phase shows how coarse-grained the measurement is.</p></div>
+      <div class="order-grid">
+        <div class="phase-chart" role="img" aria-label="Phase zero: GPT-5.5 11, GPT-5.6 Sol 18. Phase one: GPT-5.5 18, GPT-5.6 Sol 16.">
+          <div class="axis"><span>20</span><span>10</span><span>0</span></div>
+          <div class="phase"><div class="columns"><i style="--h:55%"><b>11</b></i><i class="sol" style="--h:90%"><b>18</b></i></div><strong>Phase 0</strong><small>5.5 goes first</small></div>
+          <div class="phase"><div class="columns"><i style="--h:90%"><b>18</b></i><i class="sol" style="--h:80%"><b>16</b></i></div><strong>Phase 1</strong><small>5.6 goes first</small></div>
+        </div>
+        <div class="finding-copy">
+          <div class="finding-number">±7</div>
+          <h3>points of fluctuation</h3>
+          <p>The difference between models shifts from <b>+7 for GPT-5.6</b> to <b>−2</b>. This suggests order, delay, or quantization effects in point attribution.</p>
+          <button class="info inline" data-tip="The counter exposes integer percentages: one run may cross a threshold and receive a point that includes usage accumulated earlier.">Why can this happen?</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="task-section wrap">
+      <div class="section-title"><div><span>03 / BY TASK</span><h2>The signal is not uniform.</h2></div><p>The suite includes three deterministic task families. “Dependencies” shows the largest separation between the models.</p></div>
+      <div class="task-table" role="table" aria-label="Usage by task">
+        <div class="table-head" role="row"><span>Task</span><span>GPT-5.5</span><span>GPT-5.6 Sol</span><span>Δ</span></div>
+        <div role="row"><b>Aggregate</b><span>18</span><span class="lime">19</span><strong>+1</strong></div>
+        <div role="row"><b>Dependencies</b><span>4</span><span class="lime">8</span><strong>+4</strong></div>
+        <div role="row"><b>Schedule</b><span>7</span><span class="lime">7</span><strong>0</strong></div>
+      </div>
+    </section>
+
+    <section class="verdict wrap">
+      <div class="verdict-mark">≠</div>
+      <div><span>THE VERDICT, WITH CAUTION</span><h2>The evidence is real.<br>The exact multiplier is not.</h2></div>
+      <p>Across 8 balanced suites, GPT-5.6 Sol consumed 34 points versus 29. This is a repeated, measurable signal—not proof of the billing mechanism: the counter uses integers and global telemetry may switch reset pools.</p>
+      <a class="button" href="methodology.html">Read method and limitations →</a>
+    </section>
+  </main>
+
+  <footer class="wrap"><div class="brand small"><span>CODEX</span><i></i><small>WINDOW<br>BENCHMARK</small></div><p>Data, method, transparency.</p><span>12.07.2026</span></footer>
+  <div class="tooltip" role="tooltip" aria-hidden="true"></div>
+</body>
+</html>

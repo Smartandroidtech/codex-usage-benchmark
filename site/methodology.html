@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Protocol, telemetry, and limitations of the Codex Window Benchmark.">
+  <title>Codex Window Benchmark — Methodology</title>
+  <link rel="stylesheet" href="styles.css"><script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><span>CODEX</span><i></i><small>WINDOW<br>BENCHMARK</small></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav"><a href="index.html#risultati">Results</a><a href="index.html#findings">Findings</a><a class="active" href="methodology.html">Methodology</a><span class="future-link" tabindex="0" data-tip="The public repository will be linked here when available.">GitHub <em>soon</em></span></nav>
+  </header>
+  <main>
+    <section class="method-hero wrap">
+      <div class="eyebrow"><span class="pulse"></span> Protocol v1 · reproducible evidence</div>
+      <h1>Methodology</h1><p>How we isolated, ran, and measured the comparison between GPT-5.5 medium and GPT-5.6 Sol medium.</p>
+      <div class="method-stats"><div><strong>8</strong><span>complete suites</span></div><div><strong>96</strong><span>total runs</span></div><div><strong>48</strong><span>runs per model</span></div><div><strong>3</strong><span>deterministic tasks</span></div></div>
+    </section>
+
+    <section class="protocol wrap">
+      <div class="section-title"><div><span>01 / PROTOCOL</span><h2>Same task.<br>Clean context.</h2></div><p>Every execution starts in a new thread, uses the same reasoning effort, and must produce an exact, verifiable output.</p></div>
+      <ol class="steps">
+        <li><span>01</span><div><h3>Prepare</h3><p>Input and expected output are fixed before the run.</p></div></li>
+        <li><span>02</span><div><h3>Isolate</h3><p>A new process and session are used for each model.</p></div></li>
+        <li><span>03</span><div><h3>Execute</h3><p><b>Medium</b> reasoning, same task, no human intervention.</p></div></li>
+        <li><span>04</span><div><h3>Measure</h3><p>Tokens, cache, time, correctness, and in-run quota.</p></div></li>
+        <li><span>05</span><div><h3>Balance</h3><p>Model order is reversed in the following phase.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="tasks-method wrap">
+      <div class="section-title"><div><span>02 / TASKS</span><h2>Three strictly<br>deterministic outputs.</h2></div><p>The structure reduces output variance without limiting the reasoning work needed to reach it.</p></div>
+      <div class="task-explain"><article><b>A</b><h3>Aggregate</h3><p>Structured data aggregation with a prescribed format and expected values.</p></article><article><b>D</b><h3>Dependencies</h3><p>Dependency resolution and ordering with a unique answer.</p></article><article><b>S</b><h3>Schedule</h3><p>Constraint-based scheduling with a predefined output schema.</p></article></div>
+    </section>
+
+    <section class="measurement wrap">
+      <div class="section-title"><div><span>03 / MEASUREMENT</span><h2>Quota is read<br>inside every run.</h2></div><p>The primary source is telemetry emitted by the session that just completed the task—not an estimate derived from tokens.</p></div>
+      <div class="code-line"><span>token_count.rate_limits.primary.used_percent</span><button class="info" data-tip="This field represents the percentage used in the primary window associated with the run.">?</button></div>
+      <div class="measurement-grid"><div><strong>300 min</strong><span>primary window</span></div><div><strong>Δ pre/post</strong><span>points attributed to the run</span></div><div><strong>integer %</strong><span>observed granularity</span></div><div><strong>thread ID</strong><span>retained in logs</span></div></div>
+      <p class="callout"><b>Why isn't the global counter our primary source?</b> Fresh probes showed alternating pools/resets and may include activity outside the benchmark. They remain in the logs as diagnostics, but the verdict uses the in-run counter.</p>
+    </section>
+
+    <section class="counterbalance wrap">
+      <div class="section-title"><div><span>04 / COUNTERBALANCING</span><h2>Four suites per order.</h2></div><p>The design separates the model from the position effect, although it cannot remove the counter's coarse granularity.</p></div>
+      <div class="sequence"><div><span>PHASE 0 · ×4</span><b>GPT-5.5</b><i>→</i><b class="lime">GPT-5.6 Sol</b></div><div><span>PHASE 1 · ×4</span><b class="lime">GPT-5.6 Sol</b><i>→</i><b>GPT-5.5</b></div></div>
+    </section>
+
+    <section class="limits wrap">
+      <div class="section-title"><div><span>05 / LIMITATIONS</span><h2>What we can say.<br>And what we cannot.</h2></div></div>
+      <div class="limits-grid"><article><span>We can say</span><h3>The aggregate signal was observed.</h3><p>Across these 8 suites, GPT-5.6 Sol required 5 more points while producing fewer tokens and finishing faster.</p></article><article><span>We cannot say</span><h3>We know the internal billing logic.</h3><p>The percentage is quantized to integers. The benchmark does not reveal server-side weights, rounding, or accounting rules.</p></article><article><span>Still to verify</span><h3>Stability over time.</h3><p>More five-hour windows across different dates would strengthen the estimate and reveal potential policy changes.</p></article></div>
+    </section>
+
+    <section class="github-cta wrap"><span>REPOSITORY</span><h2>Code and logs<br>will be public.</h2><p>The GitHub benchmark link will be added here. Exports will retain thread and session IDs while redacting any sensitive data.</p><span class="button disabled" tabindex="0" data-tip="Repository in preparation.">GitHub · coming soon</span></section>
+  </main>
+  <footer class="wrap"><div class="brand small"><span>CODEX</span><i></i><small>WINDOW<br>BENCHMARK</small></div><p>Transparency is the method.</p><span>12.07.2026</span></footer>
+  <div class="tooltip" role="tooltip" aria-hidden="true"></div>
+</body>
+</html>
